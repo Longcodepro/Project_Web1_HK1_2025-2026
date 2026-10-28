@@ -136,7 +136,7 @@ const trang = {
                     <ul class="loai">
                         <li>
                             <div class="anh">
-                                <img src="../img/4.png" alt="may giac" />
+                                <img src="../img/1.Máy giặt LG Inverter 9kg-Photoroom.png" alt="may giac" />
                             </div>
                             <p>Máy Giặc</p>
                         </li>

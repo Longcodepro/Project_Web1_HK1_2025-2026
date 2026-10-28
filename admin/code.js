@@ -69,24 +69,7 @@ function danhmuc() {
   lmenu.classList.toggle("open");
 }
 
-// l.2 và 1.7 lấy dữ liệu từ data.json vào localStore 
-function ensureDataLoaded() {
-  if (!localStorage.getItem("du_lieu")) {
-    fetch("./data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        localStorage.setItem("du_lieu", JSON.stringify(data));
-        localStorage.setItem("du_lieu_original", JSON.stringify(data)); // lưu bản gốc để reset
-        console.log("Dữ liệu được load từ data.json và lưu vào localStorage.");
-      })
-      .catch((err) => {
-        console.error("Lỗi load data.json:", err);
-      });
-  } else if (!localStorage.getItem("du_lieu_original")) {
-    localStorage.setItem("du_lieu_original", localStorage.getItem("du_lieu"));
-  }
-}
-ensureDataLoaded();
+// Dữ liệu đã được khởi tạo và lưu trữ qua data.js vào localStorage
 
 // ===================== BẮT BUỘC ĐĂNG NHẬP =====================
 document.addEventListener("DOMContentLoaded", () => {
