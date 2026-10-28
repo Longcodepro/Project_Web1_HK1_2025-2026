@@ -123,8 +123,7 @@ Hệ thống hoạt động theo mô hình ứng dụng web một trang (Single 
 | Ngôn ngữ xử lý | JavaScript (ES6+) | Điều hướng trang đơn (SPA), xử lý logic nghiệp vụ và tương tác DOM |
 | Thư viện biểu tượng | Font Awesome 7.0.1 (CDN) | Cung cấp hệ thống biểu tượng trực quan trên các thanh điều hướng và nút chức năng |
 | Lưu trữ dữ liệu | LocalStorage (Web Storage API) | Lưu trữ và mô phỏng cơ sở dữ liệu quan hệ phía máy khách |
-| Tự động hóa quy trình | GitHub Actions | Tự động hóa quy trình xây dựng và phát hành website lên GitHub Pages |
-| Nền tảng máy chủ tĩnh | Vercel, GitHub Pages | Lưu trữ mã nguồn và cung cấp tên miền truy cập website trực tuyến |
+| Nền tảng máy chủ đám mây | Vercel | Lưu trữ mã nguồn và cung cấp tên miền truy cập website trực tuyến |
 
 ## 📁 Cấu trúc thư mục
 
@@ -151,11 +150,9 @@ Do_an/
 │   ├── trang.js                # Chứa khuôn mẫu HTML của các trang giao diện
 │   └── trangchu.css / .js      # Giao diện và hiển thị sản phẩm trang chủ
 ├── img/                        # Thư mục chứa hình ảnh sản phẩm và logo SGU
-├── .github/                    # Cấu hình quy trình tự động hóa
-│   └── workflows/              # Workflow triển khai tự động lên GitHub Pages
 ├── data.js                     # Dữ liệu mẫu ban đầu để nạp vào LocalStorage
 ├── index.html                  # Tệp điều hướng mặc định chuyển tiếp sang user/
-└── vercel.json                 # Cấu hình chuyển hướng đường dẫn (Rewrites) cho Vercel
+└── vercel.json                 # Cấu hình chuyển hướng đường dẫn (Redirects) cho Vercel
 ```
 
 ## 🚀 Cài đặt và chạy
